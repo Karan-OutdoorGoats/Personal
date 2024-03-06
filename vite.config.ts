@@ -11,7 +11,17 @@ export default defineConfig({
 		cors: false,
 		proxy: {
 			"/wildcountrygear": {
-				target: "http://wildcountrygear.in/graphql",
+				target: "https://wildcountrygear.in/graphql",
+				changeOrigin: true,
+				secure: false,
+			},
+		},
+	},
+	build: {
+		cors: false,
+		proxy: {
+			"/wildcountrygear": {
+				target: "https://wildcountrygear.in/graphql",
 				changeOrigin: true,
 				secure: false,
 			},
