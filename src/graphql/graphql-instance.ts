@@ -12,7 +12,7 @@ const graphqlNetwork = (
 	header?: MaybeLazy<GraphQLClientRequestHeaders>,
 	signal?: AbortSignal
 ) => {
-	const graphqlInstance = new GraphQLClient("https://app.wildcountrygear.in", {
+	const graphqlInstance = new GraphQLClient("https://app.wildcountrygear.in/graphql", {
 		headers: {
 			"Content-Type": "application/json",
 		},
