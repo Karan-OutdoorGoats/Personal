@@ -1,0 +1,5 @@
+.top_category_swiper .swiper-slide {
+  /* width: 300px !important; */
+  /* width: calc((100%)) !important; */
+  width: calc((100% - 60%) - 10px) !important;
+}

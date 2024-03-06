@@ -1,0 +1,73 @@
+.add_to_cart_modal::-webkit-scrollbar {
+  width: 40px !important;
+}
+
+.add_to_cart_modal::-webkit-scrollbar-track {
+  background: #eef3f5 !important;
+}
+
+.add_to_cart_modal::-webkit-scrollbar-thumb {
+  background: "#fff000" !important;
+  border-radius: 10px !important;
+}
+
+.modal_thumbs .swiper-wrapper {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* row-gap: 15px !important; */
+  /* height: 240px; */
+  /* overflow: scroll; */
+}
+
+.modal_thumbs .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.modal_thumbs .swiper-wrapper .swiper-slide {
+  height: 70px !important;
+  width: 70px !important;
+  opacity: 0.5;
+  /* margin: 10px 0 !important; */
+}
+
+.modal_thumbs .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal_thumbImage .swiper-button-prev {
+  background-image: url("../../../../../assets/svg/left-circle.svg");
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+}
+
+.modal_thumbs .swiper-slide-thumb-active {
+  border: 2px solid #36656d !important;
+  opacity: 1 !important;
+}
+
+.modal_thumbImage .swiper-button-next {
+  background-image: url("../../../../../assets/svg/right-circle.svg");
+  height: 30px;
+  width: 30px;
+  display: block;
+  background-size: contain;
+}
+
+.modal_thumbImage .swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.modal_thumbImage .swiper-wrapper {
+  width: "100%";
+  aspect-ratio: 1;
+  box-sizing: border-box;
+}
+
+.modal_thumbImage .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}

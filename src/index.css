@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #eef3f5; */
+  background: #ededed;
+  border-radius: 888px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c6c6c6;
+  border-radius: 90px;
+}
+
+@font-face {
+  font-family: "OG-Regular";
+  src: url("./assets/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OG-Medium";
+  src: url("./assets/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OG-Bold";
+  src: url("./assets/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OG-ExtraBold";
+  src: url("./assets/fonts/Nunito-ExtraBold.ttf");
+}

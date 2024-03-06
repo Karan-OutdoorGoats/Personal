@@ -1,0 +1,8 @@
+.mobile_top_banner_swiper {
+  height: 60vh;
+}
+
+.mobile_top_banner_swiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+}

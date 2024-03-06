@@ -1,0 +1,28 @@
+.un {
+
+    position: relative
+}
+
+.un::after {
+    position: absolute;
+    content: "";
+    background: white;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 0%;
+    transition: 300ms ease-in-out;
+}
+
+
+.un:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.circle {
+    transition: all 500ms ease;
+    backface-visibility: hidden;
+}
+
+

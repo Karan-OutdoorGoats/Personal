@@ -1,0 +1,52 @@
+.brand_roll_swiper {
+  width: calc((100% - 40px));
+}
+
+.brand_roll_swiper .swiper-wrapper {
+  /* width: 100dvw; */
+}
+
+.brand_roll_swiper .swiper-slide {
+  width: calc((100% / 7)) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.brand_roll_swiper .swiper-slide img::selection {
+  background-color: transparent;
+}
+
+.brand_roll_swiper .swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.brand_roll_swiper:hover .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-image: url("../../../../assets/svg/right-circle.svg");
+}
+
+.brand_roll_swiper:hover .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-image: url("../../../../assets/svg/left-circle.svg");
+}
+
+@media screen and (max-width: 600px) {
+  .brand_roll_swiper .swiper-slide {
+    width: calc((100% / 3)) !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand_roll_swiper:hover .swiper-button-next {
+    display: none;
+  }
+
+  .brand_roll_swiper:hover .swiper-button-prev {
+    display: none;
+  }
+}
