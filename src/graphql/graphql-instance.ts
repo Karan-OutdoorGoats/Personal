@@ -12,11 +12,9 @@ const graphqlNetwork = (
 	header?: MaybeLazy<GraphQLClientRequestHeaders>,
 	signal?: AbortSignal
 ) => {
-	const graphqlInstance = new GraphQLClient("/wildcountrygear", {
+	const graphqlInstance = new GraphQLClient("https://app.wildcountrygear.in", {
 		headers: {
 			"Content-Type": "application/json",
-			"access-control-allow-origin": "*",
-			"Access-Control-Allow-Origin": "*",
 		},
 		signal,
 	});
